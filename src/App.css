@@ -1,0 +1,32 @@
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  /* display: flex; */
+  color: white;
+}
+
+/*  navbar */
+.navbar__container {
+display:flex;
+justify-content: space-between;
+width: 100%;
+align-items: center;
+background-color: rgb(27, 40, 51);
+border-bottom: 1px solid rgb(0, 0, 0) ;
+}
+.navbar__logo{
+  width:50px;
+}
+.navbar__links{
+  color:#0ff;
+}
+ul{
+  display:flex;
+  list-style: none;
+}
+.links__Navbar{
+  margin:0px 10px;
+  text-decoration: none;
+  color:#0ff;
+}
+
