@@ -1,10 +1,10 @@
 import './App.css';
-import NavBar from './components/NavBar'
+import AppRouter from './Routes/AppRouter'
 function App() {
   return (
     <div className="Contex__App">
       <div className="App">
-    <NavBar />
+          <AppRouter />
       </div>
     </div>
   );
