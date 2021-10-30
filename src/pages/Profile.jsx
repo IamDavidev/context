@@ -7,4 +7,4 @@ const Profile = () =>{
 }
 
 
-export default Profile;xx
+export default Profile;
