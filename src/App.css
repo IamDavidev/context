@@ -31,8 +31,11 @@ ul{
 }
 
 
-
-
-
 /* not found  */
-
+.page__notfound{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  color:rgb(255, 0, 0)
+}
