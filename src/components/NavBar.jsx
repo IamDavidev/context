@@ -1,5 +1,5 @@
 import logo from '../logo.svg';
-
+import { NavLink,Link } from 'react-router-dom';
 const NavBar = () => {
   return (
     <div className="context__navbar">
@@ -11,21 +11,21 @@ const NavBar = () => {
           <div className="navbar__links">
             <ul>
               <li>
-                <a className="links__Navbar" href="">
+                <Link className="links__Navbar" to='/'>
                   home
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="links__Navbar" href="">
+                <Link className="links__Navbar" to='/profile'   >
                   Profile
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
           <div className="navbar__login">
-            <a className="links__Navbar" href="">
+            <Link className="links__Navbar" to="/login" >
               login
-            </a>
+            </Link>
           </div>
         </nav>
       </header>
