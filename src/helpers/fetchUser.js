@@ -1,4 +1,4 @@
-export const user = {
+export const fetchUser = {
   data: {
     id: 2,
     email: 'janet.weaver@reqres.in',

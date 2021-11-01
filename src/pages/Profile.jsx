@@ -1,15 +1,12 @@
-// import { resUser } from '../helpers/fetchUser';
-import { user } from '../helpers/fetchUser';
+import { useContext } from 'react';
+import UserContext from '../contexts/UserContext';
 const Profile = () => {
-  // console.log(user);
-  const { id, email, first_name, last_name, avatar } = user.data;
-  console.log(id);
+  const { user, setUser } = useContext(UserContext);
   return (
     <div>
       <h1>this is Profile</h1>
       {/* <button onClick={resUser}  >handel user </button> */}
-    <p>{id}</p>
-      <strong>{email}</strong>
+      <h3>{user && user.data.first_name + ' ' + user.data.last_name}</h3>
     </div>
   );
 };

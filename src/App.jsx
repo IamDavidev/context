@@ -1,13 +1,23 @@
+//#region imports
 import './App.css';
-import AppRouter from './Routes/AppRouter'
+import UserContext from './contexts/UserContext';
+import AppRouter from './Routes/AppRouter';
+import { useState } from 'react';
+//#endregion
+
+//#region reder the app 
 function App() {
+  const [stateInitial, SetStateInitial] = useState(null);
   return (
-    <div className="Contex__App">
-      <div className="App">
+    <UserContext.Provider value={{user : stateInitial,setUser : SetStateInitial}}>
+      <div className="Contex__App">
+        <div className="App">
           <AppRouter />
+        </div>
       </div>
-    </div>
+    </UserContext.Provider>
   );
 }
+//#endregion
 
 export default App;
