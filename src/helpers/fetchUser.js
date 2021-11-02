@@ -1,4 +1,4 @@
-export const fetchUser = {
+ const fetchUser = {
   data: {
     id: 2,
     email: 'janet.weaver@reqres.in',
@@ -11,3 +11,6 @@ export const fetchUser = {
     text: 'To keep ReqRes free, contributions towards server costs are appreciated!',
   },
 };
+
+
+export default fetchUser;
