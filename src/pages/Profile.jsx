@@ -5,8 +5,19 @@ const Profile = () => {
   return (
     <div>
       <h1>this is Profile</h1>
-      {/* <button onClick={resUser}  >handel user </button> */}
-      <h3>{user && user.data.first_name + ' ' + user.data.last_name}</h3>
+    {
+      user ? (
+        <div>
+          <h2>{user.name}</h2>
+          <h2>{user.email}</h2>
+          <button onClick={() => setUser(null)}>Logout</button>
+        </div>
+      ) : (
+        <div>
+          <h2>Please Login</h2>
+        </div>
+      )
+    }
     </div>
   );
 };

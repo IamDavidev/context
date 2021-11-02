@@ -14,17 +14,14 @@ const LoginIn = () => {
   return (
     <div>
       <h1>Login</h1>
-      {
-        user ? (
-          <div>
-            <h1>{user.name}</h1>
-            <button onClick={handleInLogin}> LOGOUT </button>
-          </div>
-        ) : (
-          <p>out</p>
-        )
-      }
-      <button onClick={handleLogin}> LOGIN </button>
+      {user ? (
+        <div>
+          <h2>{user.data.first_name + '  ' + user.data.last_name}</h2>
+          <button onClick={handleInLogin}> LOGOUT </button>
+        </div>
+      ) : (
+        <button onClick={handleLogin}> LOGIN </button>
+      )}
     </div>
   );
 };
