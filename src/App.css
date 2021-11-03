@@ -4,45 +4,76 @@
   /* display: flex; */
   color: white;
 }
-h1{
-  text-align:center;
-  color:#0ff;
-  font-size:35px;
-  font-weight:bold;
-  font-family:'italic'
+
+h1 {
+  text-align: center;
+  color: #0ff;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'italic'
 }
 
 /*  navbar */
 .navbar__container {
-display:flex;
-justify-content: space-between;
-width: 100%;
-align-items: center;
-background-color: rgb(27, 40, 51);
-border-bottom: 1px solid rgb(0, 0, 0) ;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(27, 40, 51);
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
-.navbar__logo{
-  width:50px;
+
+.navbar__logo {
+  width: 50px;
 }
-.navbar__links{
-  color:#0ff;
+
+.navbar__links {
+  color: #0ff;
 }
-ul{
-  display:flex;
+
+ul {
+  display: flex;
   list-style: none;
 }
-.links__Navbar{
-  margin:0px 10px;
+
+.links__Navbar {
+  margin: 0px 10px;
   text-decoration: none;
-  color:#0ff;
+  color: #0ff;
 }
+
+/* profile */
+
+.profile__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 75px;
+  height: 100vh;
+  background-color: rgb(27, 40, 51);
+}
+
+.profile__container__image {
+  border-bottom: 3px solid #0ff;
+}
+
+
+.profile__img {
+  border-radius: 50%;
+  width: 125px;
+  border: 2px solid #0ff;
+  
+}
+
+
 
 
 /* not found  */
-.page__notfound{
-  display:flex;
+.page__notfound {
+  display: flex;
   justify-content: center;
   align-items: center;
-  height:100vh;
-  color:rgb(255, 0, 0)
+  height: 100vh;
+  color: rgb(255, 0, 0)
 }
