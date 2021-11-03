@@ -1,3 +1,4 @@
+
 import { useContext } from 'react';
 import UserContext from '../contexts/UserContext';
 import fetchUser from '../helpers/fetchUser';
@@ -12,7 +13,7 @@ const LoginIn = () => {
   };
 
   return (
-    <div>
+    <div className='login__in'>
       <h1>Login</h1>
       {user ? (
         <div>

@@ -24,7 +24,7 @@ h1 {
 }
 
 .nav__logo {
-  width:50px;
+  width: 50px;
 }
 
 .navbar__links {
@@ -40,6 +40,21 @@ ul {
   margin: 0px 10px;
   text-decoration: none;
   color: #0ff;
+}
+
+/* login Profile */
+
+.login__profile {
+  text-align: center;
+  color: #f00;
+}
+
+.login__to {
+  text-decoration: none;
+  color: #0ff;
+  border: 1px solid #0ff;
+  padding: 3px;
+  background-color: #000;
 }
 
 /* profile */
@@ -63,9 +78,17 @@ ul {
   border-radius: 50%;
   width: 125px;
   border: 2px solid #0ff;
-  
+
 }
 
+
+/* Login IN */
+.login__in{
+display:flex;
+flex-direction:column;
+justify-content: center;
+align-items:center;
+}
 
 
 

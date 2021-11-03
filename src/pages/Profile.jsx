@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import UserContext from '../contexts/UserContext';
 // import { History } from '../Routes/History';
 const Profile = () => {
@@ -33,8 +34,9 @@ const Profile = () => {
           </div>
         </div>
       ) : (
-        <div>
+        <div className="login__profile">
           <h2>Please Login</h2>
+          <Link to="/login" className='login__to'>LOGIN</Link>
         </div>
       )}
     </div>
