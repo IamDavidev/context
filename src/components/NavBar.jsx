@@ -1,4 +1,4 @@
-import logo from '../logo.svg';
+import logo from '../images/react-router.svg';
 import { NavLink,Link } from 'react-router-dom';
 const NavBar = () => {
   return (
@@ -6,7 +6,7 @@ const NavBar = () => {
       <header>
         <nav className="navbar__container">
           <div className="navbar__logo">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" className='nav__logo'/>
           </div>
           <div className="navbar__links">
             <ul>
